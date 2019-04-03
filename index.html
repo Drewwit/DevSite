@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/aframe-layout-component@3.x.x/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
   </head>
-  
+
   <body>
  <a-scene>
   <a-assets> 
@@ -37,9 +37,11 @@
   <!-- 360-degree image. -->
   <a-sky id="image-360" radius="10" src="#google"></a-sky>
 
-  <a-entity template="src: #button" data-thumb="#trav"></a-entity>
-  <a-entity template="src: #button" data-thumb="#cubes-thumb"></a-entity>
-  <a-entity template="src: #button" data-thumb="#sechelt-thumb"></a-entity>
+  <a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
+   <a-entity template="src: #button" data-thumb="#trav"></a-entity>
+   <a-entity template="src: #button" data-thumb="#cubes-thumb"></a-entity>
+   <a-entity template="src: #button" data-thumb="#sechelt-thumb"></a-entity>
+ </a-entity>
 
   <!-- Link we will build. -->
   <a-entity class="link"
