@@ -28,7 +28,7 @@
 
       <a-assets>
 
-        <img id="icc" crossorigin="anonymous" src="360_VirtualLobbysm.jpg">
+        <img id="virtlob" crossorigin="anonymous" src="360_VirtualLobbysm.jpg">
 
         <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
 
@@ -38,9 +38,11 @@
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
-        <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
+        <img id="smmc" crossorigin="anonymous" src="360_SMMCsm.jpg">
 
-        <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        <img id="bcbs" crossorigin="anonymous" src="360_BCBSsm.jpg">
+
+        <img id="icc" crossorigin="anonymous" src="360_ICCsm.jpg"
 
 
 
@@ -72,7 +74,7 @@
 
       <!-- 360-degree image. -->
 
-      <a-sky id="image-360" src="#icc" position="0 1 -4" rotation="0 -90 0"
+      <a-sky id="image-360" src="#virtlob" position="0 1 -4" rotation="0 -90 0"
 
              animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
 
@@ -84,11 +86,13 @@
 
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
 
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#smmc" data-thumb="#cubes-thumb"></a-entity>
 
-        <a-entity template="src: #link" data-src="#icc" data-thumb="#city-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#virtlob" data-thumb="#city-thumb"></a-entity>
 
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#bcbs" data-thumb="#sechelt-thumb"></a-entity>
+
+        <a-entity template="src: #link" data-src="#icc" data-thumb="#sechelt-thumb"></a-entity>
 
       </a-entity>
 
